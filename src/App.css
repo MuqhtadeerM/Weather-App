@@ -135,5 +135,58 @@ body {
   display: flex;
   align-items: center;
   line-height: 2px;
-  
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    width: 95%;
+    height: auto;
+    padding: 15px 10px;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+
+  .search-engine {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-engine input {
+    width: 60%;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  .search-engine button {
+    width: auto;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .temperature {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .weather-info {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .column {
+    line-height: 1.2;
+  }
+
+  .loading {
+    font-size: 40px;
+  }
+
+  .date {
+    font-size: 16px;
+  }
 }
