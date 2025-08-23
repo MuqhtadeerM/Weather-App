@@ -40,7 +40,7 @@ A simple Weather App built with React that allows users to search for real-time 
 4. Running the App
 ```bash
 npm run dev
-
+```
 ## Usage
 
 - Enter the name of a city in the search bar.
