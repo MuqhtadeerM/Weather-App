@@ -37,8 +37,8 @@ A simple Weather App built with React that allows users to search for real-time 
 3. Get a free API key from [OpenWeatherMap](https://openweathermap.org/api) (or your chosen weather API).
 
 
-### Running the App
-
+4. Running the App
+```bash
 npm run dev
 
 ## Usage
