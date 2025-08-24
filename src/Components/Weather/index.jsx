@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Search from "../Search";
+import Search from "../Search/index.jsx";
 
 export default function Weather() {
   const [search, setSearch] = useState("");
