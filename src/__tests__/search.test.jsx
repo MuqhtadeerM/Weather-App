@@ -5,6 +5,11 @@ import { render, screen } from "@testing-library/react";
 
 test("testing search", () => {
   render(<Search />);
-  const search = screen.getByRole("textbox");
-  expect(search).toBeInTheDocument();
+
+  // Role Text Box
+  const input = screen.getByRole("textbox");
+  expect(input).toBeInTheDocument();
+
+  //   check placeholder
+  expect(input).toHaveAttribute("placeholder", "Enter City Name");
 });
