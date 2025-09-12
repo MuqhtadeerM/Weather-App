@@ -10,6 +10,10 @@ test("testing search", () => {
   const input = screen.getByRole("textbox");
   expect(input).toBeInTheDocument();
 
-  //   check placeholder
+  // check placeholder
   expect(input).toHaveAttribute("placeholder", "Enter City Name");
+
+  //check name att
+
+  expect(input).toHaveAttribute("name", "search");
 });
