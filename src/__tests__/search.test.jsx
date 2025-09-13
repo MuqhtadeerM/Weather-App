@@ -14,7 +14,10 @@ test("testing search and user input data", async () => {
 
   // Role Text Box
   const input = screen.getByRole("textbox");
+  const btn = screen.getByRole("button", { name: /search/i });
+
   expect(input).toBeInTheDocument();
+  expect(btn).toBeInTheDocument();
 
   // check placeholder
   expect(input).toHaveAttribute("placeholder", "Enter City Name");
@@ -22,11 +25,12 @@ test("testing search and user input data", async () => {
   //check name att
   expect(input).toHaveAttribute("name", "search");
 
-  //   initial value should be
+  // initial value should be
   expect(input).toHaveValue("");
 
   // simulate usertyping
-
   await userEvent.type(input, "Bengaluru");
+  await userEvent.click(btn);
   expect(mockSearch).toHaveBeenCalled("Bengaluru".length);
+  expect(mockHandleSearch).toHaveBeenCalledTimes(1);
 });

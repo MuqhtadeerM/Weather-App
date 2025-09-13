@@ -24,23 +24,27 @@ A simple Weather App built with React that allows users to search for real-time 
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/MuqhtadeerM/Weather-App.git
    cd Weather-App
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
 
+   ```
 
 3. Get a free API key from [OpenWeatherMap](https://openweathermap.org/api) (or your chosen weather API).
 
-
 4. Running the App
+
 ```bash
 npm run dev
 ```
+
 ## Usage
 
 - Enter the name of a city in the search bar.
